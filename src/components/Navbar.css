@@ -1,0 +1,35 @@
+.brandlogo {
+    height: 90px;
+    width: 140px;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+
+.nav-link {
+    position: relative;    
+    display: flex;    
+    color:rgb(185, 184, 184);     
+    font-size: 12px;
+    margin-right: 20px;  
+    letter-spacing: 0.5px;
+  }
+
+ .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: goldenrod;   
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover {
+    color:white !important;   
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
