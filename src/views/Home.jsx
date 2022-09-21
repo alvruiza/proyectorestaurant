@@ -4,7 +4,7 @@ import Jumbotron from "../components/Jumbotron";
 import BlogCard from "../components/BlogCard";
 import Map from "../components/Map";
 
-const MapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBaW1uJMiryWz_r4R_ZmLm3gQMr0bAxvyY"
+const MapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&key="
 
 const Home = () => {
     return (
