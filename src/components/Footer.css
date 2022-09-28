@@ -1,0 +1,36 @@
+.footer {  
+    display: flex;    
+    background-color: rgb(10, 10, 10);
+    color:gray;  
+}
+
+.footerrow {   
+    width: 100%;
+    align-items: center;
+    align-content: center;  
+    margin-right: 5%;     
+}
+
+.footerlogo {
+    width: 100px;
+    height: 30px;
+    margin-left: 15%;
+}
+
+.footerul {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 30%;
+    font-size: 9px;
+    list-style: none;
+    margin-bottom:40%;    
+    border-style: solid;
+    border-color: blue;
+}
+
+.footerlink {    
+    text-decoration: none;
+    color: rgb(185, 184, 184);
+    font-weight: 500;    
+}

@@ -1,4 +1,161 @@
-GooglMap {
-    width: 70%;
-    
+.mapcontainer {
+    display: block;
+    float:right;
+    position: absolute;
+    width: 97%;
+    margin-right: 2%;
+    color: rgb(185, 184, 184);
+    margin-bottom: 3%;
+    margin-top: 4%;
 }
+
+.maph1 {    
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5%;
+    margin-left: 3%;
+}
+
+.maph1:hover {
+    color:white;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 3%;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 3%;
+}
+
+.nameInput {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    background: none;
+    border-style: none;  
+    outline: 0px;
+    font-size: 12px;
+    color:white;    
+}
+
+
+.namelabel {
+    font-size: 10px;
+    font-weight: 700;
+    width:400px;    
+    letter-spacing: 1px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    border-width: 1px;    
+    color: grey;
+    padding-bottom: 25px;
+    padding-left: 2px;
+}
+
+.nameInput:focus:hover + .namelabel{
+    border-color: #daa520;    
+    width: 400px;    
+    transition: 0.5s;
+    color:white;  
+    font-size: 6px;
+}
+
+.textbox {
+    margin-top: 2%;
+    display: flex;
+    position: absolute;
+    width: 400px;    
+    background:none;
+    border-style: none;    
+    color:white;
+    outline: 0px;
+    height: 30px;
+    font-size: 12px;
+    resize: none;
+}
+
+.textbox:focus:hover + .textlabel {
+    border-color: #daa520;    
+    width: 400px;    
+    transition: 0.5s;
+    color:white;  
+    font-size: 6px;
+}
+
+.textlabel {
+    font-size: 10px;
+    font-weight: 700;
+    width: 400px;    
+    letter-spacing: 1px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    border-width: 1px;    
+    color: grey;    
+    padding-bottom: 25px;
+    padding-left: 2px;
+}
+
+.sendbtn {
+    display: flex;
+    float: left;
+    margin-top: 5%;
+    margin-left: 3%;
+    background: none;
+    color: #daa520;
+    border-width: 1px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 0px 5px 0px;
+    letter-spacing: 1px;
+}
+
+.sendbtn:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #daa520;
+    padding: 5px 20px 5px 20px;
+    transition: 0.5s;
+}
+
+.contactinfo {
+    display: flex;    
+    margin-top: 20%;
+    font-size: 8px;
+    color: gray;
+    margin-left: 2%;
+    height: 35px;
+    margin-bottom: 15%;
+}
+
+i {
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+

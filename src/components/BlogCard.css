@@ -73,7 +73,7 @@
 .sideh1:hover::after {    
     content: ""; 
     width: 200px;
-    background-color: goldenrod;
+    background-color: #daa520;
     height: 2px; 
     bottom: 2%; 
     left: 0%;

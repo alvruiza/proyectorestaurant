@@ -1,5 +1,8 @@
 import { Fragment } from "react"
 import "./BlogCard.css"
+import Navbar from "./Navbar"
+import Jumbotron from "./Jumbotron"
+import Footer from "./Footer"
 
 let feed = [
     {
@@ -19,6 +22,8 @@ let feed = [
 const BlogCard = () => {
     return(
         <Fragment>
+            <Navbar />
+            <Jumbotron />
             <div className="container-fluid">
                 <h1 className="blogheader">EL SELLO MAGNOLIA</h1>
                 <div className="row jsutify-content-center cardrow">
@@ -41,7 +46,8 @@ const BlogCard = () => {
                         </div>
                     </div>                                        
                 </div>                
-            </div>        
+            </div> 
+            <Footer />       
         </Fragment>
     )
 }

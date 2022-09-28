@@ -1,0 +1,77 @@
+.daterow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.datediv {
+    display: flex;    
+    align-items: center;   
+    padding-top:  10%;  
+    width: 100%;  
+}
+
+.dateinput {
+    
+    margin-top: 0%;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    border-color: grey; 
+    outline: none; 
+    width: 250px   
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #daa520;    
+}
+
+.timediv {
+    display: flex;
+    align-items: center;   
+    padding-top:  10%;
+    width: 100%;
+}
+
+.timeinput {
+    display: flex; 
+    margin-top: 0%;
+    font-weight: 600;
+    font-size: 12px;
+    width: 250px;
+    color: white;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    border-color: grey;  
+    outline: none; 
+}
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background-color: #daa520;    
+}
+.timeinput:focus:hover { 
+    color:white;   
+    border-color: #daa520;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.dateinput:focus:hover {
+    color: white;
+    border-color: #daa520;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    transition: 0.3s;
+}

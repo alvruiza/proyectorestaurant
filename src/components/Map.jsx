@@ -1,31 +1,32 @@
 import { Fragment } from "react"
 import "./Map.css"
-import {GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps"
-import mapStyle from "./MapStyle"
+import {GoogleMap, withScriptjs, withGoogleMap, Marker} from "react-google-maps"
+import MapStyle from "./MapStyle"
 
+
+const pos = {
+    lat: -29.9849137, 
+    lng: -71.3636751
+}
 
 const Map = (props) => {
     
     return(
-        
-        <div className="container-fluid">
-                <div className="row justify-content-center">
-                    <div className="col-lg-6 col-md-6 col-xs-12">
-                        <h1>Hola mundo</h1>                        
-                    </div>  
-                <GoogleMap className="map"
-                defaultZoom={17} 
-                defaultCenter={{lat: -29.9849137, lng: -71.3636751}}
-                style={props.mapStyle}
-                />
-                </div>
-            </div>  
-        
-        
+        <Fragment>
+            <GoogleMap className="map"
+            defaultZoom={15} 
+            defaultCenter={pos}
+            options={{styles: MapStyle, disableDefaultUI: true}}
+            />
+            <Marker 
+            position={pos}
+            icon="https://i.postimg.cc/FHnCq9Y6/marker-icon.png"                         
+            />
+        </Fragment>       
         )
     }
     
-    Map.defaultProps = mapStyle;
+    
 
 export default withScriptjs(
     withGoogleMap(

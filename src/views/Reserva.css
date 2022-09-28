@@ -1,0 +1,116 @@
+.tableimg {
+    margin-top: 5%;
+    width: 100%;
+    height:100%; 
+    filter: grayscale(30%);
+    margin-bottom: 5%;
+}
+
+.calendarcol {
+    display: flex;
+    justify-content: center;    
+    align-content: center;
+}
+
+.bookingh1 {
+    display: flex;
+    margin-top: 3%;
+    font-weight: 700;
+    font-size: 22px;
+    color:grey;
+}
+
+.bookingh1:hover {
+    color: white;
+}
+
+.guestdiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.guestname {
+    display: flex;    
+    position: absolute;
+    margin-left: 10px;    
+    width: 300px;
+    height: 55px;
+    background: none;
+    border-style: none;  
+    outline: 0px;
+    font-size: 12px;
+    color:white;  
+}
+
+.guestlabel {
+    font-size: 10px;
+    font-weight: 700;
+    margin-left: 10px;
+    width:250px;    
+    letter-spacing: 1px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    border-width: 1px;    
+    color: grey;
+    padding-top: -10px;
+    padding-bottom: 20px;
+    padding-left: 2px;
+}
+
+.guestname:focus:hover + .guestlabel{
+    border-color: #daa520;    
+    width: 280px;    
+    transition: 0.5s;
+    color:white;  
+    font-size: 6px;
+}
+
+.bookingbtn {    
+    display: flex;
+    float: left;
+    margin-top: 10%;
+    margin-left: 10px;
+    background: none;
+    color: #daa520;
+    border-width: 1px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 0px 5px 0px;
+    letter-spacing: 1px;  
+    width: 250px;  
+}
+
+.bookingbtn:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #daa520;    
+    padding: 5px 95px 5px; 
+    transition: 0.8s;
+}
+
+.disclaimertxt {
+    font-size: 8px;
+    color: grey;
+    margin-left:15px;
+    margin-top: 1%;
+}
+
+.errorlabel {  
+    color: #daa520;
+    font-size: 7px;
+    position: absolute;
+    padding-top: 42px;   
+    padding-left: 10px;
+}
+
+.dateError {
+    color: #daa520;
+    font-size: 7px;
+    padding-left: 0px;
+    position: absolute;
+    padding-top: 50px;       
+}

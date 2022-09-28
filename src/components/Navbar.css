@@ -17,7 +17,7 @@
  .nav-link:after {
     content: "";
     position: absolute;
-    background-color: goldenrod;   
+    background-color: #daa520;   
     height: 2px;
     width: 0%;
     left: 0;
