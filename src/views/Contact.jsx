@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 
 const Contact = () => {
 
-    const MapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&key="  
+    const MapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBaW1uJMiryWz_r4R_ZmLm3gQMr0bAxvyY"  
 
     return(
         <Fragment>
@@ -29,7 +29,7 @@ const Contact = () => {
                             <button type="send" className="sendbtn">ENVIAR</button>
                         </div>
                         <div className="contactinfo">                                                                        
-                            <p><i class='bx bxs-pin'></i> Av.Costanerna 500, La Herradura, Coquimbo, Chile.<br></br>
+                            <p><i class='bx bxs-pin'></i> Av.Costanera 500, La Herradura, Coquimbo, Chile.<br></br>
                             <i class='bx bxs-phone'></i> +5698655522<br></br>
                             <i class='bx bxs-envelope'></i> contacto@magnolia.cl
                             </p>                           
