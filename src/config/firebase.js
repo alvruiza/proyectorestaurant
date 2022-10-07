@@ -1,14 +1,18 @@
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore"
+import { getFirestore } from "firebase/firestore"
+import { getAuth } from "firebase/auth"
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCqkxG91rc4rIi5nuU_6GPUiqrR71qzdu4",
-  authDomain: "magnolia-8ecab.firebaseapp.com",
-  projectId: "magnolia-8ecab",
-  storageBucket: "magnolia-8ecab.appspot.com",
-  messagingSenderId: "191897051726",
-  appId: "1:191897051726:web:28c1db8f46ca1790d9591f"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_AAP_BUCKET,
+  messagingSenderId: process.env.REACT_APP_SENDER,
+  appId: process.env.REACT_APP_API_ID
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const dataBase = getFirestore(app)
+export const auth = getAuth()
+

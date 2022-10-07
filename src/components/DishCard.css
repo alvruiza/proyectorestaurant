@@ -1,0 +1,69 @@
+.dishcontainer {
+    display: flex;
+    float: right;  
+    justify-content: center;  
+}
+
+.dishdiv {    
+    width:17%;
+    min-width:150px;
+    background-color: rgb(10, 10, 10);
+    margin-left:3%;
+    border-radius: 5px;  
+    margin-top: 3%;  
+    margin-bottom: 3%;
+}
+
+.dishesh1 {
+    color:grey;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.dishesh1:hover {
+    color: white;
+}
+
+.dishtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    margin-bottom: 4%;
+}
+
+.dishimg {
+    display: flex;
+    float:unset;    
+    width: 90%;    
+    margin-left: 5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #daa520;
+}
+
+.dishdescription {
+    color: white;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.dishprice {
+    display: flex;
+    justify-content: end;
+    color:#daa520;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 5%;
+    padding-bottom: 5%;
+}

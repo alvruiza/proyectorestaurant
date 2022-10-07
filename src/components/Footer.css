@@ -9,8 +9,7 @@
     align-items: center;
     align-content: center; 
     margin-left: 5%;
-    margin-top: 5%;  
-    
+    margin-top: 5%;      
 }
 
 .footerlogo {
@@ -22,8 +21,7 @@
     display: inline; 
     font-size: 12px;
     list-style: none;
-    margin-bottom:40%; 
-    
+    margin-bottom:40%;     
 }
 
 .footerul1{  
@@ -31,8 +29,7 @@
     font-size: 12px;
     list-style: none;
     margin-bottom:40%;  
-    padding-bottom: 20px;  
-   
+    padding-bottom: 20px;     
 }
 
 .footerlink {    
@@ -70,8 +67,7 @@
 .paymentcol {
     display: flex;
     float:right;
-    justify-content: end;    
-    
+    justify-content: end;   
     padding-right: 5%;
     padding-bottom: 3%;
 }

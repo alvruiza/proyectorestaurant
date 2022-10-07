@@ -12,9 +12,8 @@ import Footer from "../components/Footer"
 
 const Reserva = () => {    
 
-    const onSubmit = async () => {        
+    const onSubmit = async (values, actions) => {        
         try {
-                    
             await addDoc(collection(dataBase,"reservas"), formik.values)
             toast('Reserva Guardada, te esperamos!',
             {
@@ -26,6 +25,7 @@ const Reserva = () => {
                 },
             }
             );
+            actions.resetForm()
         }catch(error){
             toast('Oops, algo salió mal, tu reserva no fue guardada!',
             {
@@ -57,31 +57,31 @@ const Reserva = () => {
             <Navbar />
             <Jumbotron />
             <div className="container-fluid">
-                <h1 className="bookingh1">RESERVAS</h1>
                 <Toaster
                 position="bottom-center"
                 reverseOrder={false}
                 />
                 <div className="row justify-content-center imgrow">
-                    <div className="col-lg-6 col-md-6 col-xs-12 imgcol">
+                    <h1 className="bookingh1">RESERVAS</h1>
+                    <div className="col-lg-6 col-md-6 col-xs-12">
                         <img src="https://i.postimg.cc/vBTh0JMw/Dise-o-sin-t-tulo-2022-09-26-T114729-584.png" alt="" className="tableimg" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-xs-12 calendarcol">
                         <form action="" onSubmit={formik.handleSubmit} className="guestdiv" autoComplete="off">
-                        <div >                            
-                            <div className="guestinfo">
-                                {formik.errors.name && formik.touched.name && <p className="errorlabel">{formik.errors.name}</p>}                        
-                                <input value={formik.values.name} name="name" type="text" className="guestname" onChange={formik.handleChange} onBlur={formik.handleBlur}></input>                            
-                                <label htmlFor="nameInput" className="guestlabel">NOMBRE</label>                                   
-                            </div>
-                            <div className="guestinfo">
-                                {formik.errors.phone && formik.touched.phone && <p className="errorlabel">{formik.errors.phone}</p>}
-                                <input value={formik.values.phone} name="phone" type="text" className="guestname" onChange={formik.handleChange} onBlur={formik.handleBlur}></input>                            
-                                <label htmlFor="nameInput" className="guestlabel">TELEFONO</label>     
-                            </div>
-                        <Calendar formik={formik} />
+                            <div className="infodiv">                            
+                                <div className="guestinfo">
+                                    {formik.errors.name && formik.touched.name && <p className="errorlabel">{formik.errors.name}</p>}                        
+                                    <input value={formik.values.name} name="name" type="text" className="guestname" onChange={formik.handleChange} onBlur={formik.handleBlur}></input>                            
+                                    <label htmlFor="nameInput" className="guestlabel">NOMBRE</label>                                   
+                                </div>
+                                <div className="guestinfo">
+                                    {formik.errors.phone && formik.touched.phone && <p className="errorlabel">{formik.errors.phone}</p>}
+                                    <input value={formik.values.phone} name="phone" type="text" className="guestname" onChange={formik.handleChange} onBlur={formik.handleBlur}></input>                            
+                                    <label htmlFor="nameInput" className="guestlabel">TELEFONO</label>     
+                                </div>
+                                <Calendar formik={formik} />
                             <div>
-                                <button type="submit" className="bookingbtn">RESERVAR</button>
+                                <button disabled={formik.isSubmitting} type="submit" className="bookingbtn">RESERVAR</button>
                             </div>
                         </div>
                             <p className="disclaimertxt">* Reservas están sujetas a disponibilidad y confirmación.</p><br></br>

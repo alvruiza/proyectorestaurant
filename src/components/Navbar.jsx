@@ -33,8 +33,9 @@ const Navmenu = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <div className="mx-auto"></div>
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav navul">
                         <li className="nav-item"><Link to={"/"} className="nav-link l1">Inicio</Link></li>
+                        <li className="nav-item"><Link to={"/Carta"} className="nav-link l1">Carta</Link></li>
                         <li className="nav-item"><Link to={"/Reserva"} className="nav-link l1">Reservas</Link></li>
                         <li className="nav-item"><Link to={"/Nosotros"} className="nav-link l1">Nosotros</Link></li>
                         <li className="nav-item"><Link to={"/Contacto"} className="nav-link l1">Contacto</Link></li>

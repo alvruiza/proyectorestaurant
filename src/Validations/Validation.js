@@ -11,10 +11,8 @@ export const bookingSchema = yup.object().shape({
     time: yup.string().required("Este campo es obligatorio")  
 })
 
-const userSchema = yup.object().shape({
-    email: yup.string().email().required(),
-    password: yup.string().min(5).matches(passRegex, {message: "por favor utiliza una constraseña más segura"}).required("Este campo es obligatorio"),
-    confirmPass: yup.string().oneOf([yup.ref("password"), null], "no coincide con tu contraseña").required("Este campo es obligatorio")
+export const userSchema = yup.object().shape({
+    email: yup.string().email("por favor ingresa un email válido").required("Este campo es obligatorio"),
+    password: yup.string().min(8, "mínimo 8 caracteres").matches(passRegex, {message: "usa letras mayúscula y minúscula, numeros y simbolo"}).required("Este campo es obligatorio"),
 })
 
-export default userSchema 

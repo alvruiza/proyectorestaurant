@@ -1,7 +1,11 @@
+.imgrow {
+    margin-left: 2%;
+} 
+
 .tableimg {
     margin-top: 5%;
-    width: 100%;
-    height:100%; 
+    width: 90%;
+    height: 85%; 
     filter: grayscale(30%);
     margin-bottom: 5%;
 }
@@ -9,14 +13,14 @@
 .calendarcol {
     display: flex;
     justify-content: center;    
-    align-content: center;
+    align-content: center;    
 }
 
 .bookingh1 {
     display: flex;
     margin-top: 3%;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 28px;
     color:grey;
 }
 
@@ -31,24 +35,30 @@
     margin-top: 3%;
 }
 
+.infodiv {
+    width: 100%;
+}
+
 .guestname {
     display: flex;    
     position: absolute;
-    margin-left: 10px;    
-    width: 300px;
+    margin-left: 10px;  
     height: 55px;
+    width:40%;
     background: none;
     border-style: none;  
     outline: 0px;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
     color:white;  
+    padding-top: 15px;
 }
 
 .guestlabel {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     margin-left: 10px;
-    width:250px;    
+    width:80%;    
     letter-spacing: 1px;
     border-style: solid;
     border-top: none;
@@ -57,16 +67,16 @@
     border-width: 1px;    
     color: grey;
     padding-top: -10px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     padding-left: 2px;
 }
 
 .guestname:focus:hover + .guestlabel{
     border-color: #daa520;    
-    width: 280px;    
+    width: 90%;    
     transition: 0.5s;
     color:white;  
-    font-size: 6px;
+    font-size: 10px;
 }
 
 .bookingbtn {    
@@ -77,23 +87,26 @@
     background: none;
     color: #daa520;
     border-width: 1px;
-    font-size: 10px;
+    border-style: none;
+    font-size: 14px;
     font-weight: 700;
     padding: 5px 0px 5px 0px;
     letter-spacing: 1px;  
-    width: 250px;  
+    width: 80%; 
+    outline: none; 
 }
 
 .bookingbtn:hover {
     border-width: 1px;
     border-style: solid;
     border-color: #daa520;    
-    padding: 5px 95px 5px; 
+    padding: 5px 30% 5px 30%; 
     transition: 0.8s;
+    outline: none; 
 }
 
 .disclaimertxt {
-    font-size: 8px;
+    font-size: 11px;
     color: grey;
     margin-left:15px;
     margin-top: 1%;
@@ -101,7 +114,7 @@
 
 .errorlabel {  
     color: #daa520;
-    font-size: 7px;
+    font-size: 12px;
     position: absolute;
     padding-top: 42px;   
     padding-left: 10px;
@@ -109,8 +122,12 @@
 
 .dateError {
     color: #daa520;
-    font-size: 7px;
+    font-size: 12px;
     padding-left: 0px;
     position: absolute;
     padding-top: 50px;       
+}
+
+button:disabled {
+    opacity: 0.3;
 }

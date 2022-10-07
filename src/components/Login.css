@@ -1,0 +1,104 @@
+.logincol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    
+}
+
+.logodiv{
+    display: flex;
+    justify-content: center;
+}
+
+.loginlogo {
+    height: 130px;
+    width: 180px;
+    margin-top: 1%;
+}
+
+.logindiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logininput {
+    display: flex;      
+    height: 55px;
+    background: none;
+    border-style: solid; 
+    border-top: none; 
+    border-left: none;
+    border-right: none;
+    border-color: #daa520;
+    outline: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color:white;  
+    padding-top: 15px;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content:center ;
+    margin-top: 3%;
+}
+
+.accessbtn {
+    background: none;
+    color: #daa520;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15%;
+}
+
+.accessbtn:hover {
+    color: white;
+    border-style: solid;
+    border-color: #daa520;
+    border-width: 1px;
+    padding: 5px 40px 5px 40px;
+    transition: 0.5s;
+}
+
+.loginerror{
+    font-size: 11px;
+    margin-bottom: 3px;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.2;
+}
+
+.homebtndiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+    margin-right: 0%;
+}
+
+.homelink{
+    margin-right: 0%;
+}
+
+.homebtn {
+    display: flex;
+    float: right;
+    background: none;
+    color: #daa520;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+

@@ -1,9 +1,8 @@
 .mapcontainer {
     display: block;
     float:right;
-    position: absolute;
-    width: 97%;
-    margin-right: 2%;
+    position: absolute;    
+    margin-right: 0%;
     color: rgb(185, 184, 184);
     margin-bottom: 3%;
     margin-top: 4%;

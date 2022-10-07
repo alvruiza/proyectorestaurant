@@ -1,0 +1,63 @@
+.banner-image {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.postimg.cc/Bv7qwJct/calendario-agosto-paisaje-fondo-de-pantalla-simple-colores-frios-2.png");
+    background-size: cover;
+    background-position-y: 90% ;
+    
+}
+
+.jumborow {
+    display: flex;
+    float: right;
+    color:white;   
+    justify-content: end;
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 8%;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.subheader {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.title, .subheader {
+    display: flex;
+    justify-content: end;
+}
+
+.ctabutton {
+    display: block;
+    justify-content: end;
+    background: none;
+    border-color: #daa520;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    color: #daa520;
+    width: 150px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 1%;
+}
+
+.ctabutton:hover {
+    width:375px;
+    transition: 0.5s;
+}
+
+.jumbolink {
+    text-decoration: none;
+    color:inherit
+}

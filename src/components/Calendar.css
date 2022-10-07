@@ -11,11 +11,10 @@
     width: 100%;  
 }
 
-.dateinput {
-    
+.dateinput {    
     margin-top: 0%;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     border-width: 1px;
     border-top: none;
@@ -24,7 +23,7 @@
     background-color: black;
     border-color: grey; 
     outline: none; 
-    width: 250px   
+    width: 85%;  
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -42,8 +41,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex; 
     margin-top: 0%;
     font-weight: 600;
-    font-size: 12px;
-    width: 250px;
+    font-size: 14px;
+    width: 85%;
     color: white;
     border-width: 1px;
     border-top: none;
