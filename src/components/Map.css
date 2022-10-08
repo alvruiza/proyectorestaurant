@@ -34,20 +34,20 @@
 .nameInput {
     display: flex;
     position: absolute;
-    width: 300px;
+    width: 80%;
     height: 30px;
     background: none;
     border-style: none;  
     outline: 0px;
-    font-size: 12px;
+    font-size: 14px;
     color:white;    
 }
 
 
 .namelabel {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
-    width:400px;    
+    width:80%;    
     letter-spacing: 1px;
     border-style: solid;
     border-top: none;
@@ -61,17 +61,17 @@
 
 .nameInput:focus:hover + .namelabel{
     border-color: #daa520;    
-    width: 400px;    
+    width: 90%;    
     transition: 0.5s;
     color:white;  
-    font-size: 6px;
+    font-size: 10px;
 }
 
 .textbox {
     margin-top: 2%;
     display: flex;
     position: absolute;
-    width: 400px;    
+    width: 80%;    
     background:none;
     border-style: none;    
     color:white;
@@ -83,16 +83,16 @@
 
 .textbox:focus:hover + .textlabel {
     border-color: #daa520;    
-    width: 400px;    
+    width: 90%;    
     transition: 0.5s;
     color:white;  
-    font-size: 6px;
+    font-size: 10px;
 }
 
 .textlabel {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
-    width: 400px;    
+    width: 80%;    
     letter-spacing: 1px;
     border-style: solid;
     border-top: none;
@@ -107,15 +107,16 @@
 .sendbtn {
     display: flex;
     float: left;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-left: 3%;
     background: none;
     color: #daa520;
     border-width: 1px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     padding: 5px 0px 5px 0px;
     letter-spacing: 1px;
+    border-style: none;
 }
 
 .sendbtn:hover {
@@ -129,7 +130,7 @@
 .contactinfo {
     display: flex;    
     margin-top: 20%;
-    font-size: 8px;
+    font-size: 12px;
     color: gray;
     margin-left: 2%;
     height: 35px;

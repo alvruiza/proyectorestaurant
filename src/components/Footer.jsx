@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container-fluid footer">
                 <div className="row footerrow">
                     <div className="col-lg-7 col-md-7 col-xs-12 logocol">
-                        <img src="https://i.postimg.cc/fWr0wqpq/Dise-o-sin-t-tulo-2022-09-28-T165923-102-removebg-preview.png" alt="" className="footerlogo"/>
+                    <Link to={"/"}><img src="https://i.postimg.cc/fWr0wqpq/Dise-o-sin-t-tulo-2022-09-28-T165923-102-removebg-preview.png" alt="" className="footerlogo"/></Link>
                         <div className="info">
                             <p><i className='bx bxs-pin'></i> Av.Costanera 500, La Herradura, Coquimbo, Chile.<br></br>
                             <i className='bx bxs-phone'></i> +5698655522<br></br>

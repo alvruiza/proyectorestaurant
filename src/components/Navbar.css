@@ -1,13 +1,24 @@
+.navcontainer{
+  transition: 0.5s;
+}
+
+.brandlogo-changed {
+ height: 100px; 
+ width: 130px;
+ transition: 0.5s;
+}
+
 .brandlogo {
     height: 130px;
     width: 180px;
     margin-left: 2%;
     margin-top: 1%;
-  }
+    transition: 0.5s
+ }
 
-  .navul {
+.navul {
     margin-right: 5%;
-  }
+}
 
 .nav-link {
     position: relative;    
@@ -37,4 +48,26 @@
     outline: none;
     width: 100%;
   }
-  
+
+.bg-black {
+  transition: 0.5s !important
+}
+
+.show {
+  background-color: black !important;
+  margin-left: 6%;
+  transition: 0.8s;
+}
+
+
+@media screen and (min-width:992px){
+
+.navbar-changed {
+  background-color: black;
+  opacity: 0.8;
+  height: 100px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+}

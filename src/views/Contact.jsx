@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 
 const Contact = () => {
 
-    const MapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBaW1uJMiryWz_r4R_ZmLm3gQMr0bAxvyY"  
+    const MapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&key="  
 
     return(
         <Fragment>
